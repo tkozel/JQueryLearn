@@ -29,7 +29,7 @@
                 $("#pole").append(elem);
             });
             $("#btLoad").click(function(event) {
-                $.get("https://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.txt",function(data) {
+                $.get("https://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.txt",(data) =>{
                     var txt = data;
                     $("#data").html(txt);
                 })
