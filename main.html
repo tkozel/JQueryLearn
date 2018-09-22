@@ -15,7 +15,7 @@
     <input id="slovo" type="date" placeholder="doplnte slovo"/>
     <button id="btAdd">Přidat</button><br/>
     <button id="btLoad">Načíst</button>
-    <div id="pole">xxxx</div><hr/>
+    <div id="pole">---</div><hr/>
 
     <pre id="data"></pre>
         
@@ -23,7 +23,7 @@
         $(function() {
             $("#btAdd").click(function(event) {
                 var datum = $("#slovo").val();
-                var elem = $("<p>asdasd</p>");
+                var elem = $("<p>Testovací data</p>");
                 var tx = datum.toLocaleString("cs-CZ");
                 elem.text(tx);
                 $("#pole").append(elem);
